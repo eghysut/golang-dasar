@@ -1,0 +1,15 @@
+Daftar jenis-jenis tipe data dasar yang didukung oleh bahasa pemrograman Go (Golang), beserta contoh literalisasi untuk masing-masing tipe data tersebut. Berikut adalah penjelasan untuk beberapa elemen tabel tersebut:
+
+- `bool`: Tipe data boolean yang bisa bernilai `true` atau `false`.
+- `int`, `int8`, `uint8`, `int16`, `uint16`, `int32`, `uint32`, `int64`, `uint64`: Tipe-tipe data integer dengan panjang bit yang berbeda.
+- `float64`, `float32`: Tipe data untuk bilangan desimal (floating-point numbers).
+- `byte`: Alias dari tipe data `uint8`, merepresentasikan karakter dalam bentuk angka.
+- `rune`: Alias dari tipe data `int32`, digunakan untuk merepresentasikan karakter Unicode.
+- `string`: Tipe data untuk merepresentasikan teks atau string.
+- `constants`: Mendefinisikan konstanta dengan nilai tertentu.
+- `structs`: Mendefinisikan struktur data yang dapat mengandung beberapa bidang dengan tipe yang berbeda.
+- `slice`: Tipe data untuk wadah berukuran variabel yang berisi elemen-elemen dengan tipe tertentu.
+- `array`: Tipe data untuk wadah berukuran tetap yang berisi elemen-elemen dengan tipe tertentu.
+- `map`: Tipe data untuk wadah yang menghubungkan kunci (key) dengan nilai (value), mirip dengan kamus atau tabel hash dalam bahasa lain.
+
+Tabel tersebut memberikan gambaran tentang jenis tipe data yang dapat digunakan dalam bahasa Go, beserta contoh penggunaannya.￼Enter
