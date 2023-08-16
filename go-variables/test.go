@@ -47,6 +47,8 @@ func main() {
     nama := "alice"
     usia := 20
     fmt.Printf("%s bertipe %T\n", nama, nama)
+    // Output: alice bertipe string
     fmt.Printf("%d bertipe %T", usia, usia)
+    // Output: 20 bertipe int
 
 }
