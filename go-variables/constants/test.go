@@ -6,7 +6,7 @@ package main
 
 //constants (Konstanta) Dasar:
 
-//const dalam Go bisa berupa karakter, string, boolean, atau nilai numerik.
+//const dalam Golang bisa berupa karakter, string, boolean, atau nilai numerik.
 //const dapat dideklarasikan seperti variabel, tetapi nilai mereka tidak dapat diubah setelah diberikan nilai awal.
 
 import (
@@ -44,4 +44,10 @@ func main() {
     const y = 10
     fmt.Println(math.Sin(y))
     // Output: -0.5440211108893699
+
+
+    // variabel dengan keyword const tanpa digunakan dia tidak akan error
+    const nama = "Alice"
+    const usia = 23
+    const ipk = 2.8
 }
