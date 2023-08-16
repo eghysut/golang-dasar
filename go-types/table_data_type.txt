@@ -12,4 +12,4 @@ Daftar jenis-jenis tipe data dasar yang didukung oleh bahasa pemrograman Go (Gol
 - `array`: Tipe data untuk wadah berukuran tetap yang berisi elemen-elemen dengan tipe tertentu.
 - `map`: Tipe data untuk wadah yang menghubungkan kunci (key) dengan nilai (value), mirip dengan kamus atau tabel hash dalam bahasa lain.
 
-Tabel tersebut memberikan gambaran tentang jenis tipe data yang dapat digunakan dalam bahasa Go, beserta contoh penggunaannya.￼Enter
+Tabel tersebut memberikan gambaran tentang jenis tipe data yang dapat digunakan dalam bahasa Go, beserta contoh penggunaannya.
