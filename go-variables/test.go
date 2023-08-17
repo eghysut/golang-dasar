@@ -58,8 +58,14 @@ func main() {
     usia4 := 20
     fmt.Printf("%s bertipe %T\n", nama4, nama4)
     // Output: alice bertipe string
-    fmt.Printf("%d bertipe %T", usia4, usia4)
+    fmt.Printf("%d bertipe %T\n", usia4, usia4)
     // Output: 20 bertipe int
+
+    // mengubah isi variabel harus bertipe yang sama
+    nama4 = "carl"
+    usia4 = 25
+    fmt.Println(nama4, usia4)
+    // Output: carl 25
 
 }
 
