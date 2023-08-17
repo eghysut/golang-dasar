@@ -4,18 +4,28 @@ package main
 
 import "fmt"
 
-// Catatan: nama variabel unik(jika ada nama variabel yang sama maka akan error).
-// nilai variabel bisa di ubah dengan tipe data yang sama(string dengan string, int dengan int).
-// variabel di golang tidak mesti menggunakan nama keyword tipe data, secara otomatis golang akan memberikan nama tipe data tersebut sesuai sistem os anda, jika anda membuat variabel yang nilainya int:
-// var number = 10 (os x_86) int32
-// var number = 10 (os x_64) int64
-
+//Berikut adalah contoh lengkap yang menggabungkan konsep-konsep variabel dari "README.txt"
 
 func main() {
-    // variabel dengan keyword tipe data string
-    var nama1 string = "Hello"
-    fmt.Println(nama1)
-    // Output: Hello
+    // Tipe Variabel dan Inisialisasi
+    var nama string = "John"
+    var usia int = 30
+    var status bool = true
+
+    // Type Inference
+    score := 85
+    pesan := "Hello"
+
+    // Penggunaan Blank Identifier
+    _, err := SomeFunction() // Mengabaikan nilai yang dikembalikan, hanya memeriksa error
+
+    // Menampilkan nilai variabel
+    fmt.Printf("Nama: %s\n", nama)
+    fmt.Printf("Usia: %d\n", usia)
+    fmt.Printf("Status: %v\n", status)
+    fmt.Printf("Score: %d\n", score)
+    fmt.Printf("Pesan: %s\n", pesan)
+    fmt.Printf("Error: %v\n", err)
 
     // variabel tanpa keyword tipe data 
     var nama2 = "World"
@@ -44,11 +54,23 @@ func main() {
     // inisialisasi var dan nama tipe data. 
     // nama_var := "nilai_var"
 
-    nama := "alice"
-    usia := 20
-    fmt.Printf("%s bertipe %T\n", nama, nama)
+    nama4 := "alice"
+    usia4 := 20
+    fmt.Printf("%s bertipe %T\n", nama4, nama4)
     // Output: alice bertipe string
-    fmt.Printf("%d bertipe %T", usia, usia)
+    fmt.Printf("%d bertipe %T", usia4, usia4)
     // Output: 20 bertipe int
 
 }
+
+
+func SomeFunction() (int, error) {
+	// Fungsi ini mengembalikan nilai dan error
+	return 42, nil
+}
+
+// Catatan: nama variabel unik(jika ada nama variabel yang sama maka akan error).
+// nilai variabel bisa di ubah dengan tipe data yang sama(string dengan string, int dengan int).
+// variabel di golang tidak mesti menggunakan nama keyword tipe data, secara otomatis golang akan memberikan nama tipe data tersebut sesuai sistem os anda, jika anda membuat variabel yang nilainya int:
+// var number = 10 (os x_86) int32
+// var number = 10 (os x_64) int64
