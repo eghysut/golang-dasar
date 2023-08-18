@@ -67,6 +67,14 @@ func main() {
     fmt.Println(nama4, usia4)
     // Output: carl 25
 
+    // variabel tanpa nilai
+    var kosong1 int
+    var kosong2 string
+    fmt.Println(kosong1)
+    fmt.Println(kosong2)
+    // Output: 0
+    // Output: 
+
 }
 
 

@@ -20,13 +20,13 @@ var greeting string = "Hello, world!"
 Type inference adalah kemampuan bahasa Go untuk secara otomatis mengidentifikasi tipe variabel berdasarkan nilai yang diberikan pada saat inisialisasi.
 
 Contoh:
-usia := 25  // Tipe variabel usia diinferensi menjadi int
-status := true  // Tipe variabel status diinferensi menjadi bool
-pesan := "Hi" // Tipe variabel pesan diinferensi menjadi string
+usia := 25      Tipe variabel usia diinferensi menjadi int
+status := true  Tipe variabel status diinferensi menjadi bool
+pesan := "Hi"   Tipe variabel pesan diinferensi menjadi string
 
 
 4. Penggunaan Blank Identifier:
 Blank identifier  (`_`) adalah tanda pengganti yang digunakan untuk mengabaikan nilai yang dikembalikan oleh suatu ekspresi atau fungsi.
 
 Contoh:
- _, err := SomeFunction()  // Mengabaikan nilai yang dikembalikan, hanya memeriksa error.
+ _, err := SomeFunction()   Mengabaikan nilai yang dikembalikan, hanya memeriksa error.
