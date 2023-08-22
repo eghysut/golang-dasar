@@ -47,4 +47,10 @@ func main() {
     // nilai max = 2^32 - 1 = 4294967295
     var unilai32 uint32 = 4294967295
     fmt.Printf("tipe: %T size: %d\n", unilai32, unilai32)
+
+    // uint64
+    // nilai min = 0
+    // nilai max = 2^64 - 1 = 18446744073709551615
+    var unilai64 uint64 = 18446744073709551615
+    fmt.Printf("tipe: %T size: %d\n", unilai64, unilai64)
 }
