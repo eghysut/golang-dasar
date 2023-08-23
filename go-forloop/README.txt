@@ -1,5 +1,6 @@
 Dasar-dasar perulangan (`for loop`) dalam bahasa pemrograman Go (Golang). 
 Perulangan digunakan untuk menjalankan serangkaian perintah berulang kali hingga kondisi tertentu terpenuhi.
+Go hanya memiliki satu perintah pengulangan yaitu for.
 
 ### For Loop Sederhana
 Struktur dasar dari `for loop` dalam Go adalah sebagai berikut:
