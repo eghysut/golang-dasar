@@ -31,6 +31,7 @@ func main() {
     // out: 5
     // end: 5
 
+    // menggunakan perintah break
     text := "golang"
     i := 0
     for {
@@ -53,5 +54,13 @@ func main() {
     // txt: g
     // out: golang
     // end: 6
+
+    // menggunakan perintah return
+    for {
+	fmt.Println("Hello Golang")
+	return
+    }
+    // Output:
+    // Hello Golang
 
 }
