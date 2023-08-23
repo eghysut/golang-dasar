@@ -24,7 +24,7 @@ for inisialisasi <= 5 {
     inisialisasi++
 }
 
-### For Loop Tanpa Kondisi
+### For Loop Tanpa kondisi(awal tengah dan akhir)
 Anda juga dapat menggunakan `for` tanpa kondisi, yang akan menjalankan perulangan hingga dihentikan secara manual:
 
 Contoh:
@@ -35,6 +35,16 @@ for {
     if i > 5 {
         break
     }
+}
+
+Pengulangan selamanya
+Jika anda mengosongkan kondisi maka pengulangan akan berjalan selamanya, dengan ini pengulangan tanpa henti dapat diekspresikan dengan singkat.
+
+Untuk keluar dari pengulangan anda bisa menggunakan perintah "break" atau "return" bergantung kepada kondisi yang dibutuhkan pada program.
+for {
+    fmt.Println("Hello world")
+    // untuk menghentikan perulangan gunakan
+    // return atau break
 }
 
 ### Penggunaan `range` dalam For Loop

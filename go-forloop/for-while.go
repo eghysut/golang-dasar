@@ -3,6 +3,11 @@ package main
 import "fmt"
 
 // For Loop Sebagai While Loop
+// Perintah for adalah "while"-nya Go
+// Dengan cara ini anda bisa menghilangkan perintah awal dan akhir,
+// menggunakan hanya ekpresi kondisi sehingga for menjadi seperti while pada bahasa C.
+
+// Contoh:
 // inisialisasi := 1
 //for inisialisasi <= 5 {
 //    fmt.Println(inisialisasi)
