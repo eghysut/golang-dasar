@@ -25,4 +25,17 @@ func main() {
 	fmt.Printf("Hello World %d kali\n", i)
     }
 
+    // perintah awal dan akhir adalah opsional
+    total := 1
+    for ; total < 5; {
+        total += total
+        fmt.Println("for:", total)                           // Output:
+        // for: 2
+        // for: 4                                            // for: 8
+
+    }
+    fmt.Println("total:", total)
+    // Output:
+    // total: 8
+
 }
