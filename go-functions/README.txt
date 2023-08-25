@@ -108,3 +108,28 @@ type PersegiPanjang struct {
 func (p PersegiPanjang) Luas() int {
     return p.Panjang * p.Lebar
 }
+
+### Fungsi sebagai Nilai (Function Values)
+Dalam Go, Anda dapat menyimpan fungsi dalam variabel seperti tipe data lainnya. Ini memungkinkan Anda untuk mengirim fungsi sebagai argumen atau mengembalikan fungsi dari fungsi lain. 
+
+Contoh:
+package main
+
+import "fmt"
+
+// Fungsi yang menerima dua int dan fungsi lain sebagai argumen
+func operasi(a, b int, fungsiOperasi func(int, int) int) int {
+    return fungsiOperasi(a, b)
+}
+
+func main() {
+    // Mendefinisikan fungsi tambah
+    tambah := func(x, y int) int {
+        return x + y
+    }
+
+    // Menggunakan fungsi sebagai nilai
+    hasilTambah := operasi(5, 3, tambah)
+    fmt.Println("Hasil Penambahan:", hasilTambah)
+}
+
