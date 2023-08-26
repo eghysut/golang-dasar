@@ -133,3 +133,26 @@ func main() {
     fmt.Println("Hasil Penambahan:", hasilTambah)
 }
 
+
+### Fungsi Closure (clouser) adalah konsep yang penting dalam bahasa pemrograman Go (Golang).             Ini mengacu pada kemampuan fungsi untuk mengakses variabel dari lingkup luar di mana fungsi tersebut didefinisikan,                                            bahkan setelah lingkup luar sudah selesai dieksekusi. Dalam Go, closure sering digunakan dalam situasi di mana Anda ingin menyimpan dan mengakses state di dala
+m fungsi.
+                                                     Contoh:
+package main
+
+import "fmt"
+
+func main() {
+    x := 10
+
+    // Closure: fungsi yang mengakses variabel x
+    fungsiClosure := func() {
+        fmt.Println(x)
+    }
+
+    x = 20 // Mengubah nilai x
+
+    // Memanggil closure
+    fungsiClosure() // Output: 20
+}                                                                                                         Manfaat utama dari closure adalah kemampuannya untuk membuat fungsi yang memiliki akses ke state internal dan dapat mempertahankan state tersebut di antara panggilan-panggilan fungsi. Ini sangat berguna dalam berbagai situasi, termasuk dalam pembuatan fungsi-fungsi yang digunakan sebagai goroutine (concurrency), pembuatan penutupan (closures) dalam pengolahan data, dan banyak lagi.
+
+Closure adalah salah satu fitur yang kuat di Go yang memungkinkan Anda untuk menulis kode yang lebih fleksibel dan dapat digunakan kembali dengan cara yang jelas dan aman.
