@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-// Fungsi Clousure
+// Fungsi Closure
 
 func main() {
     nama := "Hello"
@@ -31,5 +31,4 @@ func main() {
     }
 
     fmt.Println("global:", jumlah)
-
 }

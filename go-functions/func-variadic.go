@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-// Fungsi Variadic 
+// Fungsi dengan nilai Variadic 
 
 
 // Contoh 1:
