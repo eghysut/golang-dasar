@@ -182,3 +182,19 @@ func main() {
 
 Closure adalah salah satu fitur yang kuat di Go yang memungkinkan Anda untuk menulis 
 kode yang lebih fleksibel dan dapat digunakan kembali dengan cara yang jelas dan aman.
+
+Konsep tentang fungsi anonim dalam bahasa pemrograman Go (Golang), yang juga dikenal sebagai "closures". 
+Fungsi anonim adalah jenis fungsi khusus yang tidak memiliki nama.
+Closure dapat dianggap sebagai jenis khusus dari fungsi anonim, walaupun dalam praktiknya perbedaannya sangat sedikit. 
+Artikel ini akan memperkenalkan konsep fungsi anonim dengan contoh kode yang sesuai dalam pengembangan Go.
+
+Fungsi Anonim:
+Fungsi anonim dalam Go adalah fungsi yang tidak diberi nama seperti halnya fungsi konvensional.
+Mereka sering kali digunakan dalam kasus di mana Anda perlu meneruskan fungsi sebagai argumen 
+ke fungsi lain atau saat Anda ingin mengisolasi beberapa logika dalam lingkup tertentu.
+Fungsi anonim sering digunakan bersama dengan konsep closure.
+
+Closure:
+Closure adalah konsep yang melibatkan fungsi anonim bersama dengan lingkungan tempat mereka dibuat.
+Dalam closure, fungsi anonim dapat mengakses variabel-variabel yang berada dalam lingkup di mana mereka didefinisikan,
+bahkan setelah lingkup tersebut sebenarnya sudah tidak aktif lagi.
