@@ -2,8 +2,15 @@ package main
 
 import "fmt"
 
-// Dalam bahasa pemrograman Go (Golang), "interface kosong" mengacu pada sebuah antarmuka (interface) yang tidak memiliki metode. 
-// Dalam Go, sebuah tipe data yang memenuhi (implements) antarmuka kosong ini disebut sebagai "tipe data kosong" atau "interface kosong." Interface kosong sering digunakan untuk mengatasi tipe data yang tidak diketahui atau beragam secara dinamis.
+// Interface kosong
+// Tipe interface yang tidak memiliki method dikenal juga dengan interface kosong:
+
+// interface{}
+// Sebuah interface kosong bisa menyimpan nilai dari tipe apapun. 
+// (Setiap tipe mengimplementasikan paling tidak nol method.)
+
+// Interface kosong digunakan pada kode yang menangani nilai yang tidak diketahui. 
+// Sebagai contohnya, fungsi PrintData mengambil sejumlah argumen dengan tipe interface{}.
 
 func PrintData(data interface{}) {
     fmt.Printf("%v bertipe %T\n", data, data)
