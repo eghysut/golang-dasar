@@ -22,4 +22,12 @@ func main() {
     PrintData("Golang") // String
     PrintData(3.14)	// Float
     PrintData([]int{1,2,4}) // Slice
+
+    // Membuat variabel dari interface kosong
+    var x interface{}
+    x = 100
+    PrintData(x)
+
+    x = "Gorutine"
+    PrintData(x)
 }
