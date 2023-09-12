@@ -24,10 +24,12 @@ func (mhs Mahasiswa) Foo() {
 }
 
 func main() {
+    // deklarasi eksplisit
     var x Kontrak = Mahasiswa{Nama: "Alice"}
     x.Foo()
     // Output: Alice
 
+    // deklarasi implisit 
     y := Mahasiswa{Nama: "Carl"}
     y.Foo()
     // Output: Carl
