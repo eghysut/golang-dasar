@@ -5,6 +5,7 @@ import (
     "strings"
 )
 
+// parameter sebagai fungsi
 func getText(nama string, role func(string) string) {
     rvRole := role(nama)
     fmt.Println("sebelum:", nama)
