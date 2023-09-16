@@ -24,12 +24,12 @@ type Mahasiswa struct{
     Nama string
 }
 
-// Method dengan value recivers (Non-Pointer recivers)
+// Method dengan value receivers (Non-Pointer receivers)
 func (mhs Mahasiswa) SetNamaVal(nama_baru string) {
     mhs.Nama = nama_baru
 }
 
-// Method dengan pointer recivers
+// Method dengan pointer receivers
 func (mhs *Mahasiswa) SetNamaPtr(nama_baru string) {
     mhs.Nama = nama_baru
 }
@@ -40,12 +40,12 @@ func main() {
     fmt.Println(val.Nama)
     // Output: Hello
 
-    // Panggil method dengan pointer recivers dan ubah nilainya
+    // Panggil method dengan pointer receivers dan ubah nilainya
     val.SetNamaPtr("World")
     fmt.Println(val.Nama)
     // Output: World
 
-    // Panggil method dengan Non-pointer recivers 
+    // Panggil method dengan Non-pointer receivers 
     val.SetNamaVal("Test")
     fmt.Println(val.Nama)
     // Output: World
