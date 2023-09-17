@@ -44,4 +44,7 @@ func main() {
     z.Nama = "Carl"
     Bar(*z)
     Bar(y)
+    // Output:
+    // Carl
+    // Carl
 }
