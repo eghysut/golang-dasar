@@ -36,15 +36,46 @@ type Person struct {
     Alamat  // Struktur Alamat Embedded(tersisip)
 }
 
-### Struct Method:
-Method adalah fungsi yang terkait dengan sebuah tipe data tertentu (tipe yang didefinisikan oleh pengguna, termasuk struct).
-Method memungkinkan Anda untuk menambahkan perilaku khusus yang terkait dengan tipe data tersebut.
-Method didefinisikan dengan menempelkan fungsi ke tipe data menggunakan receiver.
+### Deklarasi Method Struct:
+
+Method struct dideklarasikan dengan menambahkan receiver (penerima) pada fungsi.
+Receiver adalah tipe data yang digunakan untuk menghubungkan fungsi dengan tipe struct yang bersangkutan.
+Method ini berada dalam lingkup (scope) yang sama dengan tipe struct yang didefinisikan.
+Artinya, Anda dapat mengakses bidang-bidang(fields) struct tersebut di dalam method.
+
+1. Receiver(Penerima) Method:
+
+Penerima method bisa berupa tipe data apa saja, termasuk tipe data pointer (*T) atau non-pointer (T).
+Jika Anda menggunakan tipe data non-pointer sebagai penerima, maka method akan bekerja pada salinan nilai struct, dan perubahan yang dilakukan di dalam method tidak akan mempengaruhi struct asli.
+Jika Anda menggunakan tipe data pointer sebagai penerima, maka method akan bekerja pada instansi struct yang sebenarnya, dan perubahan yang dilakukan di dalam method akan mempengaruhi struct asli.
+
 Contoh:
 type Mahasiswa struct{
     Nama string
 }
 
-func (m Mahasiswa) GetNama() {
-    return m.Nama
+// m: adalah variabel receiver(penerima) dari struct Mahasiswa
+func (m Mahasiswa) CetakNama() {
+    fmt.Println(m.Nama)
 }
+
+func (m Mahasiswa) SetNama() string {
+    return m.Mahasiswa
+}
+
+2. Pemanggilan Method:
+
+Method dapat dipanggil pada variabel yang memiliki tipe struct tersebut.
+Pemanggilan method dilakukan menggunakan operator dot (.) setelah variabel.
+
+Contoh:
+mhs := Mahasiswa{Nama: "Alice"}
+// memanggil method CetakNama() pada struct Mahasiswa
+mhs.CetakNama()
+
+3. Method Pointer vs. Method Non-Pointer:
+
+Pemilihan antara method pointer atau method non-pointer tergantung pada apakah Anda 
+ingin mengubah nilai asli struct atau hanya bekerja dengan salinan nilai.
+Jika Anda ingin mengubah nilai asli, gunakan method pointer.
+Jika Anda hanya ingin membaca nilai struct, gunakan method non-pointer.
