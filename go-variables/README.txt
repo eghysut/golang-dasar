@@ -43,6 +43,21 @@ Contoh:
 var angka int    // Variabel angka akan memiliki nilai 0
 var nama string // Variabel nama akan memiliki string kosong
 
+### Deklarasi multiple variabel dalam satu pernyataan. 
+Jenis-jenis multiple variabel yang umum digunakan termasuk:
+
+Multiple Variabel dengan Tipe Data Yang Sama:
+Anda dapat mendeklarasikan beberapa variabel dengan tipe data yang sama dalam satu pernyataan.
+Contoh:
+var a, b, c int    // Mendeklarasikan tiga variabel bertipe int.
+var nama1, nama2 string // Mendeklarasikan dua variabel bertipe string.
+
+Multiple Variabel dengan Inisialisasi Pendek:
+Anda dapat menggunakan pendekatan inisialisasi pendek (:=) untuk mendeklarasikan dan menginisialisasi beberapa variabel dengan tipe data yang sama dalam satu pernyataan. Ini umum digunakan dalam fungsi.
+Contoh:
+x, y, z := 10, 20, 30 // Mendeklarasikan dan menginisialisasi tiga variabel bertipe int.
+nama1, nama2 := "Alice", "Bob" // Mendeklarasikan dan menginisialisasi dua variabel bertipe string.
+
 ### Penggunaan Blank Identifier:
 Blank identifier  (`_`) adalah tanda pengganti yang digunakan untuk mengabaikan nilai yang dikembalikan oleh suatu ekspresi atau fungsi.
 
