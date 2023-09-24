@@ -16,9 +16,7 @@ Contoh:
 var score int = 95
 var greeting string = "Hello, world!"
 
-### Deklarasi Variabel Type Inference (Inferensi Tipe):
-Type inference adalah kemampuan bahasa Go untuk secara otomatis mengidentifikasi
-tipe variabel berdasarkan nilai yang diberikan pada saat inisialisasi.
+### Deklarasi Variabel dengan Pendekatan Singkat (Short Variable Declaration):
 Ini adalah cara singkat untuk mendeklarasikan dan menginisialisasi variabel di dalam fungsi. 
 Ini menggunakan operator := dan hanya dapat digunakan di dalam fungsi.
 
