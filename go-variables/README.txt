@@ -1,5 +1,3 @@
-tipe variabel, inisialisasi, type inference, dan blank identifier
-
 ### Tipe Variabel:
 Tipe variabel adalah jenis data yang menentukan jenis nilai yang dapat disimpan dalam variabel tersebut.
 
@@ -51,7 +49,9 @@ var a, b, c int    // Mendeklarasikan tiga variabel bertipe int.
 var nama1, nama2 string // Mendeklarasikan dua variabel bertipe string.
 
 Multiple Variabel dengan Inisialisasi Pendek:
-Anda dapat menggunakan pendekatan inisialisasi pendek (:=) untuk mendeklarasikan dan menginisialisasi beberapa variabel dengan tipe data yang sama dalam satu pernyataan. Ini umum digunakan dalam fungsi.
+Anda dapat menggunakan pendekatan inisialisasi pendek (:=) untuk mendeklarasikan dan menginisialisasi 
+beberapa variabel dengan tipe data yang sama dalam satu pernyataan.
+Ini umum digunakan dalam fungsi.
 Contoh:
 x, y, z := 10, 20, 30 // Mendeklarasikan dan menginisialisasi tiga variabel bertipe int.
 nama1, nama2 := "Alice", "Bob" // Mendeklarasikan dan menginisialisasi dua variabel bertipe string.
