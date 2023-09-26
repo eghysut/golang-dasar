@@ -58,7 +58,10 @@ func (g GenericMap[K, _]) keys() {
     }
 }
 
-// 
+// Method get():
+// Mendefinisikan method get() yang digunakan untuk 
+// mendapatkan nilai dari peta generik berdasarkan kunci s.
+// Method ini mencari kunci yang sesuai dan mengembalikan nilainya, jika ada.
 func (g GenericMap[K, V]) get(s K) V {
     var val V
 
