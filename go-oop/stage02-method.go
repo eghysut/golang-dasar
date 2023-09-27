@@ -1,4 +1,4 @@
-package main
+/*package main
 
 import "fmt"
 
@@ -30,4 +30,4 @@ func main() {
     // Output:
     // nama: carl umur: 22
 
-}
+}*/
