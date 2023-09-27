@@ -3,8 +3,6 @@ Ini adalah entitas pemrograman yang ditentukan pengguna
 Class mendefinisikan sekumpulan atribut (setiap atribut memiliki tipe)
 Atribut juga disebut properti, bidang, anggota data
 
-
-### Method
 ### Method
 Method mengacu pada fungsi yang terkait dengan tipe data tertentu. 
 Method adalah cara untuk menambahkan perilaku khusus kepada 
