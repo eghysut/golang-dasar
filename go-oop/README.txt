@@ -10,6 +10,7 @@ tipe data (struktur atau tipe data definisi sendiri) yang Anda buat.
 Dalam banyak bahasa pemrograman berorientasi objek, 
 ini sering disebut sebagai "metode" atau "fungsi anggota" 
 yang terkait dengan kelas atau objek.
+Nama method harus unik(uniq) didalam kumpulan method
 
 Dalam Go, penggunaan method sedikit berbeda dari bahasa berorientasi objek lainnya.
 
