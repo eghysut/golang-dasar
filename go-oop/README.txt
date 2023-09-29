@@ -38,3 +38,25 @@ pointer dan nama receiver yang pendek.
 Method dengan pointer receiver dapat mengambil pointer ATAU value sebagai receiver
 Method dengan value receiver dapat mengambil pointer ATAU value sebagai receiver
 ***
+
+### Encapsulation
+Encapsulation adalah salah satu konsep utama dalam pemrograman berorientasi objek 
+yang menunjukkan cara membatasi akses ke data dan method dalam sebuah objek. 
+Dalam encapsulasi, atribut/field/property dan method dalam sebuah kelas dapat dibuat private, protected, atau public.
+Private dan protected hanya dapat diakses secara internal oleh objek itu sendiri atau turunannya, 
+sedangkan public dapat diakses dari luar objek.
+untuk mengakses dan mengubah variabel private diluar kelas kita butuh method yang perilakunya bisa mengakses fields
+private dan protected.
+Golang menyediakan enkapsulasi pada tingkat package(paket). 
+Go tidak memiliki kata kunci public, private, atau protected. 
+Satu-satunya mekanisme untuk mengontrol visibilitas adalah dengan menggunakan format huruf besar dan huruf kecil.
+
+Huruf Besar (Exported):
+identifier yang diawali dengan huruf besar(misalnya, Nama, Usia, Fungsi()) 
+dianggap sebagai identifier yang dapat diekspor(exported) dan 
+dapat diakses dari luar paket(package).
+
+Huruf Kecil (Unexported):
+identifier yang diawali dengan huruf kecil(misalnya, nama, usia, fungsi()) 
+dianggap sebagai identifier yang tidak dapat diekspor(unexported) dan 
+hanya dapat diakses dari dalam/internal paket(package) yang sama.
