@@ -2,7 +2,7 @@ package mahasiswa
 
 type Mahasiswa struct{
     Nama string // Exported, bisa diakses dari luar paket
-    usia int    // Unexported, hanya bisa diakses dari dalam paket / internal (bisa disebut di dalam file ini)
+    usia int    // Unexported, hanya bisa diakses dari dalam paket atau internal (bisa disebut di dalam file ini)
 }
 
 // Method dengan receiver value atau disebut (pass by value)
