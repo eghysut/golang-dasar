@@ -60,3 +60,10 @@ Huruf Kecil (Unexported):
 identifier yang diawali dengan huruf kecil(misalnya, nama, usia, fungsi()) 
 dianggap sebagai identifier yang tidak dapat diekspor(unexported) dan 
 hanya dapat diakses dari dalam/internal paket(package) yang sama.
+
+### Polymorphism
+Polymorphism berarti "Nama yang sama dengan banyak bentuk". 
+Kata-kata ini berasal dari istilah poly(yang berarti beberapa) dan "morphism" yang mendesain bentuk, bentuk sesuatu.
+Polymorphism dianggap sebagai salah satu fitur penting dari Object Oriented Programming. 
+Polymorphism memungkinkan kita untuk melakukan satu tindakan dengan cara yang berbeda. 
+Dengan kata lain, Polymorphism memungkinkan Anda untuk mendefinisikan satu antarmuka dan memiliki beberapa implementasi.
