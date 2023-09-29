@@ -1,4 +1,4 @@
-package mahasiswa
+/*package mahasiswa
 
 type Mahasiswa struct{
     Nama string // Exported, bisa diakses dari luar paket
@@ -13,4 +13,4 @@ func (m Mahasiswa) GetUsia() int {
 // Method dengan receiver pointer atau disebut (pass by reference)
 func (m *Mahasiswa) SetUsia(usia_baru int) {
     m.usia = usia_baru
-}
+}*/
