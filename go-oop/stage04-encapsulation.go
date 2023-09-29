@@ -1,4 +1,4 @@
-package main
+/*package main
 
 import (
 	"fmt"
@@ -23,4 +23,4 @@ func main() {
     fmt.Println(mhs.GetUsia())
     // Output: 20
 
-}
+}*/
