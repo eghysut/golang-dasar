@@ -67,3 +67,40 @@ Kata-kata ini berasal dari istilah poly(yang berarti beberapa) dan "morphism" ya
 Polymorphism dianggap sebagai salah satu fitur penting dari Object Oriented Programming. 
 Polymorphism memungkinkan kita untuk melakukan satu tindakan dengan cara yang berbeda. 
 Dengan kata lain, Polymorphism memungkinkan Anda untuk mendefinisikan satu antarmuka dan memiliki beberapa implementasi.
+
+### Abstraction
+Istilah abstraksi berasal dari bahasa Latin abstractio, 
+istilah ini menyampaikan ide pemisahan, mengambil sesuatu.
+Konsep penting lain dari pemrograman berorientasi objek adalah abstraksi.
+Golang cukup mampu mengimplementasikan abstraksi tingkat tinggi, 
+namun perancang bahasa memilih untuk tidak mengimplementasikan abstraksi tertentu ke dalam bahasa pemrograman itu sendiri.
+Anda dapat menggunakan interface(antarmuka) untuk membuat abstraksi umum yang dapat digunakan oleh banyak tipe. 
+interface menentukan satu atau lebih deklarasi method yang harus dipenuhi agar kompatibel dengan interface.
+
+### Inheritance
+Konsep warisan (inheritance) dalam pemrograman berorientasi objek(OOP) 
+berasal dari prinsip "pewarisan" dalam dunia nyata, 
+di mana sifat-sifat fisik atau karakteristik tertentu dapat diturunkan dari generasi ke generasi. 
+Seorang anak dapat mewarisi sifat genetik nenek moyangnya. 
+Tetapi kita tidak bisa mereduksi anak-anak menjadi seperti nenek moyangnya. 
+Ketika mereka tumbuh dewasa, mereka akan membangun sifat-sifat khusus mereka.
+
+Konsep pewarisan yang sama berlaku untuk kelas dalam pemrograman berorientasi objek. 
+Ketika Anda membuat aplikasi yang kompleks, sering kali objek-objek yang diidentifikasi memiliki 
+beberapa properti dan operasi yang sama.
+
+Sebagai contoh, setiap guru memiliki nama, nama keluarga, tanggal lahir, alamat, dll. 
+Guru sekolah dan guru universitas memiliki kedua properti tersebut. 
+Mengapa tidak membuat sebuah objek super yang akan menyimpan properti umum tersebut dan 
+membaginya dengan subkelas?
+
+Itulah ide dari pewarisan. 
+Objek akan mendefinisikan properti dan operasi unik mereka dan mewarisi nenekmoyangnya. 
+Ini akan mengurangi pengulangan kode. 
+Properti yang digunakan bersama hanya didefinisikan ke dalam objek super, sekali saja.
+
+Apakah hal ini bisa dilakukan dengan Go? Jawabannya adalah tidak. 
+Kita akan melihat sebuah konsep desain yang penting: 
+type embedding(penyematan tipe). 
+Tujuan utama dari bagian ini adalah untuk melihat apakah kita bisa melihat penyematan tipe 
+sebagai bentuk pewarisan.
