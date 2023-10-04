@@ -1,8 +1,9 @@
-package main
+/*package main
 
 import "fmt"
 
-// Kondisi Else If                                  `else if` digunakan ketika Anda memiliki beberapa kondisi yang ingin diuji secara berurutan.
+// Kondisi Else If                                  
+// "else if" digunakan ketika Anda memiliki beberapa kondisi yang ingin diuji secara berurutan.
 
 //if kondisi {
     // kodisi boolean bernilai false
@@ -24,4 +25,4 @@ func main() {
 	fmt.Println("else")
     }
     // Output: else if
-}
+}*/
