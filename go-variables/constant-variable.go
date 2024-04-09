@@ -12,6 +12,7 @@ package main
 import (
     "fmt"
     "math"
+    "reflect"
 )
 
 //first_namr adalah const  string yang diekspor (publik).
@@ -50,4 +51,5 @@ func main() {
     const nama = "Alice"
     const usia = 23
     const ipk = 2.8
+    fmt.Println(reflect.TypeOf(nama))
 }

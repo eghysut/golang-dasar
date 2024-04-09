@@ -5,8 +5,10 @@ package main
 import "fmt"
 
 //Berikut adalah contoh lengkap yang menggabungkan konsep-konsep variabel dari "README.txt"
+var hello = "variabel hello diluar fungsi main"
 
 func main() {
+    fmt.Println("hello:",hello)
     // Tipe Variabel dan Inisialisasi
     var nama string = "John"
     var usia int = 30
