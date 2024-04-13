@@ -1,7 +1,7 @@
 package main
 
 import (
-    "fmt"
+	"fmt"
 )
 
 func main() {
@@ -22,4 +22,7 @@ func main() {
     fmt.Println(fname)
     fmt.Println("Indeks ke 6 adalah:", indeks)
 
+    for i := 127; i <= 300; i++ {
+        fmt.Printf("\n%d : %s", i, string(i))
+    } 
 }

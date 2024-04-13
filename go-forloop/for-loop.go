@@ -37,5 +37,17 @@ func main() {
     fmt.Println("total:", total)
     // Output:
     // total: 8
+    
+    // tanpa perintah tengah
+    for k := 0; ; k++ {
+        fmt.Println(k)
+        if k == 10 {
+            break
+        }
+    }
+
+    for k := 0; {
+        fmt.Println(k)
+    }
 
 }
